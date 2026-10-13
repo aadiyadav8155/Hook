@@ -1,0 +1,134 @@
+/* App.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.app-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom right, #fafaf9, #f8fafc, #eff6ff);
+  padding: 1.25rem;
+}
+
+.counter-card {
+  width: 100%;
+  max-width: 48rem;
+  border-radius: 32px;
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 4rem 1.5rem;
+  text-align: center;
+  box-shadow: 0 25px 50px -12px rgba(203, 213, 225, 0.4);
+}
+
+.counter-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.45em;
+  color: #64748b;
+}
+
+.divider {
+  margin: 1.25rem auto 0 auto;
+  height: 3px;
+  width: 4rem;
+  border-radius: 9999px;
+  background: linear-gradient(to right, #60a5fa, #818cf8);
+}
+
+.display-circle {
+  margin: 2.5rem auto;
+  display: flex;
+  height: 13rem;
+  width: 13rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: linear-gradient(to bottom right, #f8fafc, #eff6ff);
+}
+
+.count-text {
+  font-size: 6rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: #0f172a;
+}
+
+.buttons-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+button {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.btn-round {
+  display: flex;
+  height: 5rem;
+  width: 5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 2.25rem;
+  font-weight: 300;
+}
+
+.btn-decrement {
+  background-color: #f1f5f9;
+  color: #1e293b;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.btn-decrement:hover {
+  background-color: #e2e8f0;
+}
+
+.btn-reset {
+  border-radius: 9999px;
+  border: 2px solid #cbd5e1;
+  padding: 1.25rem 2rem;
+  font-weight: 600;
+  color: #64748b;
+  background: transparent;
+  font-size: 1rem;
+}
+
+.btn-reset:hover {
+  border-color: #60a5fa;
+  color: #2563eb;
+}
+
+.btn-increment {
+  background: linear-gradient(to bottom right, #3b82f6, #6366f1);
+  color: white;
+  box-shadow: 0 20px 25px -5px rgba(147, 197, 253, 0.4);
+}
+
+.btn-increment:hover {
+  transform: translateY(-4px);
+}
+
+@media (min-width: 640px) {
+  .counter-card {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .buttons-container {
+    gap: 2rem;
+  }
+}
